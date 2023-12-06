@@ -12,7 +12,7 @@
     "run:all": "ts-node ./scripts/run-all.ts",
     "submit": "ts-node ./scripts/submit-answer.ts",
     "test": "jest",
-    "format": "prettier \"src/**/*.{js,ts,json}\" -w"
+    "format": "prettier \"{src,scripts}/**/*.{js,ts,json}\" -w"
   },
   "devDependencies": {
     "@types/command-line-args": "5.2.3",
