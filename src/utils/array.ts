@@ -57,8 +57,8 @@ export function cartesian<T>(...arrays: T[][]): T[][] {
   return arrays.reduce(
     (productArrays, array) =>
       productArrays.flatMap((productArray) =>
-        array.map((value) => [...productArray, value])
+        array.map((value) => [...productArray, value]),
       ),
-    [[]] as T[][]
+    [[]] as T[][],
   );
 }

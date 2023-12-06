@@ -9,7 +9,7 @@ export type Interval = [number, number];
 
 export function getIntersection(
   [{ x: x1, y: y1 }, { x: x2, y: y2 }]: Segment,
-  [{ x: x3, y: y3 }, { x: x4, y: y4 }]: Segment
+  [{ x: x3, y: y3 }, { x: x4, y: y4 }]: Segment,
 ): Point | null {
   const D = (x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4);
 

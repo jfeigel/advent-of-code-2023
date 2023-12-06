@@ -13,7 +13,7 @@ export function search(
   source: string,
   target?: string,
   getDistance: DistanceFunction = DefaultGetDistance,
-  getHeuristic: HeuristicFunction = DefaultGetHeuristic
+  getHeuristic: HeuristicFunction = DefaultGetHeuristic,
 ) {
   const distanceLookup = new Map();
   distanceLookup.set(source, 0);

@@ -58,7 +58,7 @@ axios
       headers: {
         cookie: `session=${process.env.SESSION}`,
       },
-    }
+    },
   )
   .then((response) => {
     if (response.data.includes("That's not the right answer")) {

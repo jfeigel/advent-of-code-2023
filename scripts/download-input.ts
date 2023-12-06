@@ -25,7 +25,7 @@ setTimeout(() => {
     .then((response) =>
       fs.writeFile(`./src/day.${day}.input.txt`, response.data, () => {
         console.info("Downloaded input file successfully!");
-      })
+      }),
     )
     .catch((error) => {
       console.error("Failed to download input file: ", error.message);
